@@ -5,7 +5,7 @@
     "reject-old-version" : true,
     "properties": {
         "url": {
-            "type": "stsring",
+            "type": "string",
             "maxLength": 255
         },
         "referrer": {

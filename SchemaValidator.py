@@ -2,11 +2,11 @@ import re
 
 
 class ValidationError(Exception):
-    def __init__(self, message, errors):
-        # Call the base class constructor with the parameters it needs
-        super(ValidationError, self).__init__(message)
-        # Now for your custom code...
-        self.errors = errors
+    def __init__(self, *args):
+        if args[0]:
+            self.message = args[0]
+        else:
+            self.message = None
 
 
 acceptableTypes = ["string", "number"]
