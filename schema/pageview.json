@@ -1,0 +1,16 @@
+{
+    "name": "page-view",
+    "description": "Schema for a Digikala product context",
+    "version": "1-0-0",
+    "reject-old-version" : true,
+    "properties": {
+        "url": {
+            "type": "stsring",
+            "maxLength": 255
+        },
+        "referrer": {
+            "type": "string",
+            "maxLength": 255
+        }
+    }
+}
