@@ -21,4 +21,4 @@ def getSchemas():
     return json.dumps(schemasName)
 
 
-run(host='localhost', port=8080)
+run(host='localhost', port=1350)

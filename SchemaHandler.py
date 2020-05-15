@@ -20,7 +20,7 @@ class SchemaHandler:
                 try:
                     self.validateSchema(data)
                 except ValidationError as error:
-                    print(":".join((data['name'], data['version'])) + f'has an error {error}')
+                    print("[Validation Exception] " + ":".join((data['name'], data['version'])) + f' has an error {error}')
                     continue
                 self.schemas[":".join((data['name'], data['version']))] = data
         return self.schemas
